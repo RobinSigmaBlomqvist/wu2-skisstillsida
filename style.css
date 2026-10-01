@@ -7,8 +7,8 @@
 
 body{
     margin: 0;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #211612;
+    color: #211612;
     font-family: 'Arsenica Trial', 'Segoe UI', Arial, sans-serif;
 }
 
@@ -16,8 +16,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #000000;
-    color: #ffffff;
+    background: #211612;
+    color: #f4f3ef;
     padding: 18px 40px;
 }
 
@@ -36,7 +36,7 @@ nav{
 .hero{
     display: flex;
     flex-wrap: wrap;
-    background-color: #f8f9fa;
+    background-color: #f4f3ef;
     img{
         width: 70%;
         height: 70%;
@@ -49,7 +49,7 @@ nav{
 }
 .oneevent{
     flex: 300px;
-    background-color: #f8f9fa;
+    background-color: #f4f3ef;
     margin: 1%;
 }
 .event-title {
