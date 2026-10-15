@@ -52,18 +52,33 @@ nav{
 .hero{
     display: flex;
     flex-wrap: nowrap;
+    align-items: stretch;
+    min-height: 420px;
 }
+
 .hero img{
     width: 60%;
-    height: 70%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero > article {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100%;
 }
 
 .hero-text{
     background-color: #f4f3ef;
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     padding: 20px;
     gap: 8px;
+    height: auto;
+    font-size: large;
 }
 
 .hero-text .purpul{
@@ -79,6 +94,7 @@ nav{
     gap: 12px;
     background-color: #f4f3ef;
     padding: 0 20px 20px;
+    margin-top: auto;
 }
 
 .button,
