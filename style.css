@@ -1,7 +1,14 @@
 @font-face {
-    font-family: 'Arsenica Trial';
-    src: url('font/ArsenicaTrial-Regular.ttf') format('truetype');
+    font-family: 'Avenir';
+    src: url('font/Avenir.ttc') format('truetype-collection');
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArsenicaTrial-Medium';
+    src: url('font/ArsenicaTrial-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -9,7 +16,7 @@ body{
     margin: 0;
     background-color: #211612;
     color: #211612;
-    font-family: 'Arsenica Trial', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Avenir', 'Segoe UI', Arial, sans-serif;
 }
 
 header{
@@ -19,18 +26,19 @@ header{
     background: #211612;
     color: #f4f3ef;
     padding: 18px 40px;
+    font-family: 'ArsenicaTrial-Medium', 'Segoe UI', Arial, sans-serif;
+
 }
 
 header img{
     width: 300px;
     height: 100px;
 }
-
-h1{
-    margin: 0;
-    font-size: 2rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+h2{
+    color: #f4f3ef;
+    padding-left: 20px;
+    font-size: xx-large;
+    font-family: 'ArsenicaTrial-Medium', 'Segoe UI', Arial, sans-serif;
 }
 nav{
     display: flex;
@@ -38,32 +46,61 @@ nav{
     align-items: center;
     gap: 28px;
 }
-.button{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: end;
-    width: 30%;
+.underline{
+    text-decoration: underline solid #8565d6;
 }
 .hero{
     display: flex;
     flex-wrap: nowrap;
-    background-color: #f4f3ef;
 }
-
 .hero img{
-    width: 70%;
+    width: 60%;
     height: 70%;
 }
 
 .hero-text{
+    background-color: #f4f3ef;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    .purpul{
-    color: #8565d6;
-    }
+    gap: 8px;
 }
 
+.hero-text .purpul{
+    margin: 0;
+    color: #8565d6;
+    font-family: 'ArsenicaTrial-Medium', 'Segoe UI', Arial, sans-serif;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    background-color: #f4f3ef;
+    padding: 0 20px 20px;
+}
+
+.button,
+.purpulbutton{
+    flex: 1 1 90px;
+    margin: 0;
+    padding: 16px 18px;
+    text-align: center;
+    text-decoration: underline solid;
+}
+
+.button{
+    background-color: #f4f3ef;
+    color: #211612;
+    text-decoration-color: #8565d6;
+}
+
+.purpulbutton{
+    background-color: #8565d6;
+    color: #f4f3ef;
+    text-decoration-color: #f4f3ef;
+}
 .events{
     display: flex;
     flex-wrap: wrap;
@@ -73,12 +110,16 @@ nav{
     flex: 300px;
     background-color: #f4f3ef;
     margin: 1%;
+    p{
+        padding-left: 20px;
+    }
 }
 .event-title {
     margin: 0.75rem 0 0;
-    font-size: 1.1rem;
+    font-size: 150%;
     font-weight: 600;
     line-height: 1.4;
+    padding-left: 20px;
     }
 
 .events img{
@@ -90,9 +131,17 @@ nav{
 }
 footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #8565d6;
     color: #f4f3ef;
     padding: 18px 40px;
+}
+footer img{ 
+    display: block;
+    width: 48%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
